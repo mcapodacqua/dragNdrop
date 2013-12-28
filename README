@@ -1,2 +1,9 @@
-DragNDrop 0.1
-This is a jQuery plugin that help you to Drag&Drop images in a <div>.
+		DragNDrop 0.1
+Drag&Drop an image in a container, 
+Works with HTML5 using the new class FileReader 
+to show the base64 code of an image. 
+With this way, there are no necessary to upload the image with ajax 
+to display it.
+If the browser supports HTML5 but the plugin not work, it could be
+because the browser doesn't support File Reader( eg Safari 5). 
+More information: http://caniuse.com/filereader 
