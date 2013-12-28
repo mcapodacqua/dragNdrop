@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>DragNDrop</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<script src="js/jquery-1.4.min.js"></script>
+		<script src="js/dragNdrop.js"></script>
+		<style>
+			#dragNdrop{
+				width: 200px;
+				height: 200px;
+				border: 1px dashed blue;
+			}
+			#dragNdrop img{
+				max-width: 200px;
+				max-height: 200px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="dragNdrop"></div>
+		<script>
+			$('#dragNdrop').dragNdrop({
+				beforeLoad: function(){
+					console.log("Before Load");
+				},
+				afterLoad: function(){
+					console.log("After Load");
+				},
+				beforeShow: function(){
+					console.log("Before Show");
+				}, 
+				afterShow: function(image){
+					console.log("After Show, IMAGE: " + image);
+				}
+			});
+		</script>
+	</body>
+</html>
